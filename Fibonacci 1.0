@@ -1,0 +1,13 @@
+public class fibonacci {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/**print out the Fibonacci sequence for valus<50*/
+      int lo=1,hi=1;
+      System.out.println(lo);
+      while(hi<50){
+    	  System.out.println(hi);
+    	  hi=hi+lo;
+    	  lo=hi-lo;
+      }
+	}
+}
