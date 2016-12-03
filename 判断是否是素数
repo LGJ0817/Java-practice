@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class sushu {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Scanner in =new Scanner(System.in);
+     int x=in.nextInt();
+     boolean isPrime=false;
+     if(x==1||x%2==0&&x!=2) //去除1,2和偶数
+     {
+    	 isPrime=false;
+    	 System.out.println(isPrime);
+		 System.out.println("这个数不是素数");
+     }
+     else
+     {
+    	 for(int i=3;i<x;i+=2)   //循环（n-3）/2+1遍，当n很大时，可看做n-3=n，此时是n/2遍
+    	 {
+    		if(x%i==0)
+    		{
+    			isPrime=false;
+    			break;
+    		}
+    		else
+    		{
+    			isPrime=true;
+    		}
+    	 }
+    	System.out.println(isPrime);
+    	System.out.println("这个数是素数");
+     }
+	}
+
+}
